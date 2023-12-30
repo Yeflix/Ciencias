@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  body{
+    margin: 90px;
+  }
+    .container {
+      position: relative;
+      height: 100vh;
+    }
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 100%;
+      background-color: #f8f8f8;
+      overflow: hidden;
+    }
+    .content {
+      margin-left: 200px;
+      height: 2000px; /* Ejemplo de contenido largo para mostrar la barra de desplazamiento */
+    }
+    .scroll-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #ccc;
+      padding: 10px;
+      cursor: pointer;
+    }
+    .scroll-button-up {
+      left: -40px;
+    }
+    .scroll-button-down {
+      right: -40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      !-- Contenido de la barra de desplazamiento lateral --
+    </div>
+    <div class="content">
+      -- Contenido principal de la página --
+    </div>
+    <button class="scroll-button scroll-button-up" onclick="scrollContent(-100)">▲</button>
+    <button class="scroll-button scroll-button-down" onclick="scrollContent(100)">▼</button>
+  </div>
+
+  <script>
+    function scrollContent(scrollAmount) {
+      var content = document.querySelector('.content');
+      content.scrollTop += scrollAmount;
+    }
+    function toggleSidebar() {
+      var sidebar = document.getElementById('sidebar');
+      var content = document.getElementById('content');
+      if (sidebar.style.width === '200px') {
+        sidebar.style.width = '0';
+      } else {
+        sidebar.style.width = '200px';
+         }
+    }
+  </script>
+</body>
+</html>
