@@ -11,7 +11,7 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 .inicio{
  display: flex;
@@ -46,7 +46,7 @@ body{
   border-radius: 10px;
   height: 30px;
   margin: 2px 2px 2px 2px;
-  padding: 5px;
+  padding: 10px;
   
 }
 .container-header{
@@ -106,16 +106,17 @@ a{
   height: auto;
 }
 .boton{
+ position: relative;
  
 }
 
  .sidebar {
       width: 0;
       height: 100%;
-      background-color: #f8f8f8;
+      background-color: #FF0000;
       overflow: hidden;
       z-index: 10;
       position: absolute;
-      transition: width 0.5s;
+      transition: width 1s;
     }
   
