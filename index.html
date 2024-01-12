@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html  lang="en"> 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -10,18 +10,21 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body  >
+  
   <header class="header">
     <div class="container-header">
-      <button class="boton" onclick="toggleSidebar()">Abrir menu</button>
-      <input class="buscador" type="search">
+       <button class="boton" onclick="abrirMenu()">Abrir menu</button>
+      <input onclick="cerrarMenu()" class="buscador" type="search">
+      
       <a href="#">Facultad</a>
       <a href="#">Carrera</a>
       <a href="#">materias</a>
      
     </div>
   </header>
-  <main>
+  <main  onclick="cerrarMenu()" >
+    
     <section class="inicio">
       <div class="texto">
         <h1>¿Que es ULA?</h1>
@@ -38,8 +41,18 @@
     
     </section>
   
-  </main>
-  <main class="container-main">
+  </main >
+  
+<div class="sidebar" id="sidebar">
+    <ul>
+      <li><a href="#"></a>Ingieneria</li>
+      <li><a href="#"></a>Humanidades</li>
+      <li><a href="#"></a>Ciencias</li>
+      <li><a href="#"></a>Ciencias políticas</li>
+    </ul>
+
+  </div>
+  <main onclick="cerrarMenu()"  class="container-main">
  
     <div class="main-div">
       <h1><i>Misión</i></h1>
@@ -58,14 +71,12 @@
          <section class="etiq">
            <p>La Universidad de Los Andes es una institución en permanente proceso de cambio, transformación, crecimiento y desarrollo, fundamentada en la cultura de calidad y excelencia, la planificación, la multidisciplinaridad e interdisciplinaridad y el liderazgo corporativo; con estructura dinámica, desconcentrada y flexible, cuya autonomía académica, investigativa y de extensión propende al desarrollo del conocimiento y a la solución de problemas del entorno.</p>
        </div>
-      
-        
-       
   </main>
-<footer class="footer-main">
+  
+<footer onclick="cerrarMenu()" class="footer-main">
   <section class="facultades">
    <h1>Facultades</h1>
-     <ul>
+     <ul> 
        <li>Ciencias</li>
        <li>Ingieneria</li>
        <li>Humanidades</li>
@@ -88,13 +99,6 @@
     </ul>
   </section>
 </footer>
-
-
-<div class="sidebar" id="sidebar">
-    - Contenido de la barra de desplazamiento lateral -
-  <button class="boton" onclick="toggleSidebar()" >cerrar</button>
-  </div>
-
 
   <script src="main.js"></script>
 </body>
