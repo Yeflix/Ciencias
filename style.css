@@ -6,12 +6,15 @@
 }
 html{
   font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 body{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   font-size: 1.5rem;
+  background: #DCDEFF;
+ 
 }
 .inicio{
  display: flex;
@@ -22,6 +25,7 @@ body{
  margin-bottom: 10px;
  margin-top: 5px;
  margin-left: 1%;
+ 
 
 }
 .texto{
@@ -41,29 +45,34 @@ body{
   height: 25%;
 }
 .header {
-  font-size: 1.2rem;
+  font-size: 1rem;
   background: rgb(26, 107, 229, 0.7);
   border-radius: 10px;
-  height: 30px;
+  height: 34px;
   margin: 2px 2px 2px 2px;
-  padding: 10px;
+  padding: 4px;
+ 
   
 }
 .container-header{
-  margin-top: 5px;
   width: 100%;
   display: flex;
+  flex-direction: row ;
+  align-items: center;
   justify-content: space-between;
+  margin: 1%;
 }
 .buscador{
-  margin: 0 0 10px 0;
    border-radius: 10px;
    width: 40%;
-   height: 20px;
+   height: 16px;
+   padding: 4px;
+  
 }
 a{
   text-decoration: none;
  font-style: italic;
+  font-size: 1.2rem;
 }
 .container-main{
   font-size: 1.2rem;
@@ -104,19 +113,37 @@ a{
   width: 100%;
   border-radius: 10px 10px 0 0;
   height: auto;
+  border: solid 2px ;
+  padding: 11px;
+  box-sizing: border-box;
+}
+.footer-main > .facultades, .medios, .nucleos {
+  border: solid;
+  padding: 8px;
+  margin: 2px;
+  border-radius: 8px;
 }
 .boton{
- position: relative;
- 
+  font-size: 1.2rem;
+  padding: 4px;
+  border-radius: 20px;
+  border: transparent;
+  
 }
+ul{
+  list-style: none;
+}
+
 
  .sidebar {
       width: 0;
-      height: 100%;
-      background-color: #FF0000;
-      overflow: hidden;
-      z-index: 10;
+      background-color: #939AEA;
+      overflow: auto;
       position: absolute;
-      transition: width 1s;
+      transition: width 0.5s;
+      
+      height: 100%;
     }
-  
+  .sidebar > ul {
+    padding: 20px;
+  }

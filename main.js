@@ -1,13 +1,23 @@
 let sidebar = document.getElementById('sidebar');
 
-function toggleSidebar() {
+
+sidebar.style.display ='block'
+function abrirMenu() {
       
-      var content = document.getElementById('content');
-      if (sidebar.style.width === '200px') {
-        sidebar.style.width = '0';
+    if (sidebar.style.width == '150px') {
+    } else {
+      sidebar.style.width ='150px';
+      
+    }
+   }
    
-      } else {
-        sidebar.style.width = '200px';
- 
-         }
-    } 
+function cerrarMenu() {
+   
+  if (sidebar.style.width === '150px') {
+        sidebar.style.width = '0';
+        
+        
+    } else {
+      sidebar.style.width ='150px;'
+    }
+   }
